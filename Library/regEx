@@ -1,0 +1,22 @@
+
+ \[[^[\]]*?\]
+
+Leitura: \[ [^[\]] *? \]
+
+\ : estoura o caracter
+^ : sinal de exceto basicamente
+*? : seleciona tudo e vai de 0 ate acabar
+
+\(https?:\/\/[^\s?#.].[^\s]*\)
+
+https? : pegar todos os s caso tenha
+/s : espaço
+
+(): oque estiver entre colchetes, são grupos
+
+Expressão regular
+[([^[\]]*?)\]\((https?:\/\/[^\s?#.].[^\s]*)\)
+
+para selecionarmos apenas uma parte, colocamos entre (), para que seja criado grupos. Facilitando o manuseio.
+
+
